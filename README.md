@@ -1,7 +1,5 @@
 # fms-logviewer-frontend
 
-Frontend for the FileMaker Server LogViewer
-
 ## Table of Contents
 
 - [About the Project](#about-the-project)
@@ -16,7 +14,7 @@ Frontend for the FileMaker Server LogViewer
 
 ## About the Project
 
-The Project is the backend for the FileMaker Server LogViewer.
+The Project is the frontend for the FileMaker Server LogViewer.
 
 Since FileMaker Server 17 there is no convinient way for reading the log files. This porject helps to overcome this circumstance.
 
