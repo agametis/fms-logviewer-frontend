@@ -135,7 +135,7 @@ export default {
       ],
       daten: [],
       serverSelected: "",
-      serverAdressen: ["www.agacloud.de", "<serverURL 2>", "<serverURL 3>"],
+      serverAdressen: ["<serverURL 1>", "<serverURL 2>", "<serverURL 3>"],
       logSelected: "",
       logDateien: ["Access.log", "Event.log", "fmdapi.log"],
       backend: {
