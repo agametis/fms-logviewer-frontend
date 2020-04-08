@@ -8,11 +8,11 @@ Vue.use(Vuetify)
 import de from 'vuetify/es5/locale/de'
 
 export default new Vuetify({
-	icons: {
-		iconfont: 'mdi',
+  icons: {
+    iconfont: 'mdi',
   },
   lang: {
     locales: { de },
-    current: 'de',
+    current: 'en', // en is always available, de must be loaded separately
   },
 })

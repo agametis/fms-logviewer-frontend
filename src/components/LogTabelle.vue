@@ -20,7 +20,7 @@
             <v-select
               v-model="logSelected"
               :items="logDateien"
-              label="Logdatei"
+              label="Log File"
               single-line
               class="logSelectFeld"
             ></v-select>
@@ -30,7 +30,7 @@
               class="ml-2 mr-2 mt-3 ml-4"
               @click="Aktualisieren"
             >
-              <v-icon left>mdi-update</v-icon>Aktualisieren
+              <v-icon left>mdi-update</v-icon>Update
             </v-btn>
           </v-row>
         </v-card>
@@ -45,7 +45,7 @@
           <v-text-field
             v-model="search"
             append-icon="search"
-            label="Suche"
+            label="Search"
             single-line
             hide-details
           ></v-text-field>
@@ -79,7 +79,7 @@
     <v-snackbar v-model="snackbarLoading" color="error" :timeout="timeout" top>
       {{ snackbarMeldung }}
       <v-btn dark text @click="snackbarLoading = false">
-        Schließen
+        Close
       </v-btn>
     </v-snackbar>
   </div>
@@ -99,6 +99,24 @@ export default {
       search: "",
       headers: [
         {
+          text: "Timestamp",
+          align: "left",
+          sortable: false,
+          value: "ts",
+          width: "170"
+        },
+        {
+          text: "Type",
+          align: "left",
+          sortable: false,
+          value: "type",
+          width: "90"
+        },
+        { text: "Num", align: "center", value: "num", width: "80" },
+        { text: "Message", align: "left", value: "message" }
+      ],
+      headersDE: [
+        {
           text: "Zeitstempel",
           align: "left",
           sortable: false,
@@ -117,11 +135,7 @@ export default {
       ],
       daten: [],
       serverSelected: "",
-      serverAdressen: [
-        "<serveradress 1>",
-        "<serveradress 2>",
-        "<serveradress 3>"
-      ],
+      serverAdressen: ["www.agacloud.de", "<serverURL 2>", "<serverURL 3>"],
       logSelected: "",
       logDateien: ["Access.log", "Event.log", "fmdapi.log"],
       backend: {
@@ -133,7 +147,7 @@ export default {
         dapiRoute: "dapi"
       },
       dialogLoading: false,
-      dialogMeldung: "Daten werden geladen",
+      dialogMeldung: "Loading data",
       snackbarLoading: false,
       snackbarMeldung: "",
       logRadio: null,
@@ -202,7 +216,7 @@ export default {
           this.dialogLoading = false;
           this.backend.url = "";
           this.fileName = "";
-          (this.snackbarMeldung = "Daten konnten nicht geladen werden"),
+          (this.snackbarMeldung = "Data clould not be loaded"),
             (this.snackbarLoading = true);
         });
     },
@@ -227,7 +241,7 @@ export default {
         // lese dapi.log
         this.readLogFile("dapi");
       } else {
-        this.snackbarMeldung = "Bitte eine Logdatei wählen";
+        this.snackbarMeldung = "Please choose a log file";
         this.snackbarLoading = true;
         this.backend.url = "";
         this.daten = [];

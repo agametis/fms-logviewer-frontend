@@ -16,7 +16,7 @@
               <span>agametis</span>
             </v-btn>
           </template>
-          <span>gehe zu https://www.agametis.de</span>
+          <span>visit https://www.agametis.de</span>
         </v-tooltip>
       </v-card-title>
     </v-card>
