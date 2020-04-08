@@ -115,6 +115,7 @@ export default {
         { text: "Num", align: "center", value: "num", width: "80" },
         { text: "Message", align: "left", value: "message" }
       ],
+      // headersDE for german headers in the table
       headersDE: [
         {
           text: "Zeitstempel",
