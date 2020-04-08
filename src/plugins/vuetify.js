@@ -13,6 +13,6 @@ export default new Vuetify({
   },
   lang: {
     locales: { de },
-    current: 'en', // en is always available, de must be loaded separately
+    current: 'en', // en is always availabel, de must be loaded separately
   },
 })
