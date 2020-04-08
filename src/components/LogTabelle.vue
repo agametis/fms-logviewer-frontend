@@ -120,7 +120,7 @@ export default {
       serverAdressen: [
         "<serveradress 1>",
         "<serveradress 2>",
-        "fms-1.agacloud.eu"
+        "<serveradress 3>"
       ],
       logSelected: "",
       logDateien: ["Access.log", "Event.log", "fmdapi.log"],
