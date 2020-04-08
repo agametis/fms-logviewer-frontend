@@ -224,7 +224,7 @@ export default {
         this.logRadio === "dapiRadio" ||
         this.logSelected === "fmdapi.log"
       ) {
-        // lese Event.log
+        // lese dapi.log
         this.readLogFile("dapi");
       } else {
         this.snackbarMeldung = "Bitte eine Logdatei wählen";
