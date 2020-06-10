@@ -19,6 +19,8 @@ The Project is the frontend for the FileMaker Server LogViewer.
 
 Since FileMaker Server 17 there is no convenient way for reading the log files. This project helps to overcome this circumstance.
 
+![](screenshot.png)
+
 ## Prerequirements
 
 Node.js >= 12.x
