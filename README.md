@@ -15,7 +15,7 @@
 
 ## About the Project
 
-The Project is the frontend for the FileMaker Server LogViewer.
+The Project is the frontend for the FileMaker Server LogViewer [backend]((https://github.com/agametis/fms-logviewer-backend)).
 
 Since FileMaker Server 17 there is no convenient way for reading the log files. This project helps to overcome this circumstance.
 
