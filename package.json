@@ -16,7 +16,7 @@
 		"glob-parent": ">=5.1.2",
 		"moment": "^2.29.4",
 		"vue": "^3.0.0",
-		"vuetify": "^2.6.10"
+		"vuetify": "^3.11.3"
 	},
 	"devDependencies": {
 		"@mdi/font": "^4.9.95",
